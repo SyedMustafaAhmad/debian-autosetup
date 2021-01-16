@@ -47,7 +47,7 @@ then
 
 	# Dependencies
 	# su
-	# apt install sudo
+	# apt install sudo git
 	# Add to wheel group if not added yet
 	# exit
 
