@@ -10,4 +10,5 @@ To Do:
   - Need to add implementation to make softwares like sxiv and st default
 
 Fixes:
-  - (not done) In dependencies, add git and X11 libraries
+  - (done) In dependencies, add git and X11 libraries
+  - (not done) Better implementation for arch
