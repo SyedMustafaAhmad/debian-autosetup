@@ -5,7 +5,7 @@ clear
 printf "#################################################################\n"
 printf "   AUTOMATIC SETUP FOR DEBIAN-BASED SYSTEMS\n"
 printf "   AUTHOR: SYED MUSTAFA AHMED\n"
-printf "   URL: https://github.com/SyedMustafaAhmad/debian-autosetup\n"
+printf "   URL: https://github.com/SyedMustafaAhmad/linux-autosetup\n"
 printf "#################################################################\n\n"
 
 # List of Contents
