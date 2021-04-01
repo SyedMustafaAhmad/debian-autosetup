@@ -1,4 +1,4 @@
-# linux-autosetup
+# debian-autosetup
 A script that sets up all of the configurations, dependecies, tools and softwares I need on any system for debian.
 
 ## How To Use:
@@ -10,7 +10,7 @@ Then run this command to clone the repository,
 ```console
 git clone https://github.com/SyedMustafaAhmad/debian-autosetup/
 ```
-To run the shell script, use yhe following commad after you *cd* into the debian-autosetup folder
+To run the shell script, use yhe following commad after you _cd_ into the debian-autosetup folder,
 ```console
 sh debian-autosetup.sh
 ```
