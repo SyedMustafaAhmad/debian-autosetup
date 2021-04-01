@@ -1,14 +1,22 @@
 # linux-autosetup
-A script that sets up all of the configurations, dependecies, tools and softwares I need on any system
+A script that sets up all of the configurations, dependecies, tools and softwares I need on any system for debian.
 
-Uptill now, I've added software, tool installs and source download implementation for:
-  - Debian-based Systems
-  - Arch-based Systems
-  
-To Do:
+## How To Use:
+Simply run the commad in terminal as super user,
+```bash
+apt install git
+```
+Then run this command to clone the repository,
+```bash
+git clone https://github.com/SyedMustafaAhmad/linux-autosetup/
+```
+To run the shell script, use "sh debian-autosetup.sh"
+
+## To Do:
   - Still need to add implementation of placing config files at proper places and setting up /usr/bin/ directories
   - Need to add implementation to make softwares like sxiv and st default
 
-Fixes:
+## Fixes:
   - (done) In dependencies, add git and X11 libraries
   - (not done) Better implementation for arch
+
