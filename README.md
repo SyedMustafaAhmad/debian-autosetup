@@ -3,15 +3,15 @@ A script that sets up all of the configurations, dependecies, tools and software
 
 ## How To Use:
 Simply run the commad in terminal as super user,
-```bash
+```console
 apt install git
 ```
 Then run this command to clone the repository,
-```bash
+```console
 git clone https://github.com/SyedMustafaAhmad/debian-autosetup/
 ```
 To run the shell script, use yhe following commad after you *cd* into the debian-autosetup folder
-```bash
+```console
 sh debian-autosetup.sh
 ```
 
