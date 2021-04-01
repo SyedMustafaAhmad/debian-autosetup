@@ -10,7 +10,10 @@ Then run this command to clone the repository,
 ```bash
 git clone https://github.com/SyedMustafaAhmad/linux-autosetup/
 ```
-To run the shell script, use "sh debian-autosetup.sh"
+To run the shell script, use yhe following commad after you *cd* into the debian-autosetup folder
+```bash
+sh debian-autosetup.sh
+```
 
 ## To Do:
   - Still need to add implementation of placing config files at proper places and setting up /usr/bin/ directories
@@ -18,5 +21,4 @@ To run the shell script, use "sh debian-autosetup.sh"
 
 ## Fixes:
   - (done) In dependencies, add git and X11 libraries
-  - (not done) Better implementation for arch
-
+  - (not done) Need to configure sudoers file properly
