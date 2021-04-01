@@ -15,11 +15,25 @@ To run the shell script, use yhe following commad after you _cd_ into the debian
 ```console
 sh debian-autosetup.sh
 ```
+__Note: Some people experience problems running Xorg directly afterwards so it is recommended to give the system a restart.__
+
+## Running dwm
+Firstly, exit out of super user. Now, run the following command to start Xorg
+```console
+startx
+```
+Now, you need to execute dwm i.e.
+```console
+exec dwm
+```
+Congratulations!
+Alternatively, if you want to automatically run dwm at startup, edit your .Xinitrc file.
 
 ## To Do:
   - Still need to add implementation of placing config files at proper places and setting up /usr/bin/ directories
   - Need to add implementation to make softwares like sxiv and st default
+  - Need to configure sudoers file properly
 
 ## Fixes:
-  - (done) In dependencies, add git and X11 libraries
-  - (not done) Need to configure sudoers file properly
+  - In dependencies, add git and X11 libraries
+  - Add dmenu, st as the terminal and dwm as a window manager
