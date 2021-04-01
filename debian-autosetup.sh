@@ -29,6 +29,7 @@ then
 	# $INSTALL="sudo apt install"
 	# $UPDATE="sudo apt update"
 	# $UPDATE="sudo apt upgrade"
+    su
 
 	clear
 	# Header 2
@@ -37,7 +38,7 @@ then
 	printf "#################################################################\n\n"
 
 	# Update & Upgrade system first
-	sudo apt update && sudo apt upgrade
+	apt update && apt upgrade
 
 	clear
 	# Header 3
@@ -46,10 +47,7 @@ then
 	printf "#################################################################\n\n"
 
 	# Dependencies
-	# su
-	# apt install sudo git
-	# Add to wheel group if not added yet
-	# exit
+	apt install xorg libx11-dev libxft-dev libxft2 libxrandr-dev libxi-dev libxinerama-dev
 
 	clear
 	# Header 4
@@ -58,13 +56,14 @@ then
 	printf "#################################################################\n\n"
 
 	# Tools
-	sudo apt install g++ vim locate
+	apt install gcc g++ vim htop git make
 
 	# Softwares
-	sudo apt install nnn pcmanfm firefox 
+	apt install nnn
+    # pcmanfm firefox
 
 	# Updating to newer versions
-	sudo apt update && sudo apt upgrade
+	apt update && apt upgrade
 
 	clear
 	# Header 5
@@ -73,9 +72,9 @@ then
 	printf "#################################################################\n\n"
 
 	# Source Setup
-	# cd ~
-	# mkdir src
-	# cd src
+	cd ~
+	mkdir src
+	cd src
 
 	# Personal Git
 	# git clone https://github.com/SyedMustafaAhmad/bashrc
@@ -83,11 +82,12 @@ then
 	# git clone https://github.com/SyedMustafaAhmad/i3wm
 
 	# Suckless
-	# git clone https://git.suckless.org/st
-	# git clone https://git.suckless.org/dwm
+	git clone https://git.suckless.org/st
+	git clone https://git.suckless.org/dwm
+    git clone https://git.suckless.org/dmenu
 
 	# Others
-	# git clone https://github.com/muennich/sxiv.git
+	git clone https://github.com/muennich/sxiv.git
 
 	clear
 	# Header 6
@@ -95,9 +95,19 @@ then
 	printf "   BUILDING FROM SOURCES ...\n"
 	printf "#################################################################\n\n"
 
-	# Building st terminal
-	# Building sxiv
-	# Building dwm
+	# Compiling
+    cd dwm
+    make install
+    cd ..
+    cd dmenu
+    make install
+    cd ..
+    cd st
+    make install
+    cd ..
+    cd sxiv
+    make install
+    cd ~
 
 	clear
 	# Header 7
@@ -120,9 +130,9 @@ then
 	printf "#################################################################\n\n"
 	
 	# Update
-	sudo apt update && sudo apt update
+	apt update && apt upgrade
 	# Autoremove
-	sudo apt autoremove
+	# apt autoremove
 
 	clear
 	# Header 9
@@ -131,7 +141,7 @@ then
 	printf "#################################################################\n\n"
 
 	printf "\nINSTALLED:\n"
-	printf "g++ vim locate nnn pcmanfm firefox st dwm sxiv\ngit:: bashrc myscripts i3wm-config\n\n"
+	printf "apt install xorg libx11-dev libxft-dev libxft2 libxrandr-dev libxi-dev libxinerama-dev\ngcc g++ vim htop git make nnn\ndwm dmenu st sxiv\n\n"
 
 	printf "FULL PACKAGE LIST:\n"
 	apt list --installed
@@ -143,6 +153,6 @@ then
 	read OPTION
 
 	# END
-	pause
+    exit
 	clear
 fi
