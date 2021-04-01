@@ -60,7 +60,7 @@ then
 
 	# Softwares
 	apt install nnn
-    # pcmanfm firefox
+	# pcmanfm firefox
 
 	# Updating to newer versions
 	apt update && apt upgrade
@@ -84,7 +84,7 @@ then
 	# Suckless
 	git clone https://git.suckless.org/st
 	git clone https://git.suckless.org/dwm
-    git clone https://git.suckless.org/dmenu
+	git clone https://git.suckless.org/dmenu
 
 	# Others
 	git clone https://github.com/muennich/sxiv.git
@@ -96,18 +96,18 @@ then
 	printf "#################################################################\n\n"
 
 	# Compiling
-    cd dwm
-    make install
-    cd ..
-    cd dmenu
-    make install
-    cd ..
-    cd st
-    make install
-    cd ..
-    cd sxiv
-    make install
-    cd ~
+    	cd dwm
+	make install
+	cd ..
+	cd dmenu
+	make install
+	cd ..
+	cd st
+	make install
+	cd ..
+	cd sxiv
+	make install
+	cd ~
 
 	clear
 	# Header 7
@@ -153,6 +153,6 @@ then
 	read OPTION
 
 	# END
-    exit
+	exit
 	clear
 fi
