@@ -11,7 +11,7 @@ Then run this command to clone the repository,
 git clone https://github.com/SyedMustafaAhmad/debian-autosetup/
 ```
 To run the shell script, use yhe following commad after you _cd_ into the debian-autosetup folder,
-**Make sure to run this script as a superuser**
+**Make sure to run this script as a superuser**,
 ```console
 sh debian-autosetup.sh
 ```
