@@ -8,7 +8,7 @@ apt install git
 ```
 Then run this command to clone the repository,
 ```bash
-git clone https://github.com/SyedMustafaAhmad/linux-autosetup/
+git clone https://github.com/SyedMustafaAhmad/debian-autosetup/
 ```
 To run the shell script, use yhe following commad after you *cd* into the debian-autosetup folder
 ```bash
