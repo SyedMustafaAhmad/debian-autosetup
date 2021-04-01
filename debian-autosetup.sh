@@ -29,7 +29,7 @@ then
 	# $INSTALL="sudo apt install"
 	# $UPDATE="sudo apt update"
 	# $UPDATE="sudo apt upgrade"
-	su
+	# su
 
 	clear
 	# Header 2
@@ -153,6 +153,6 @@ then
 	read OPTION
 
 	# END
-	exit
+	# exit
 	clear
 fi
