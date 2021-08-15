@@ -96,7 +96,7 @@ then
 	printf "#################################################################\n\n"
 
 	# Compiling
-    	cd dwm
+	cd dwm
 	make install
 	cd ..
 	cd dmenu
