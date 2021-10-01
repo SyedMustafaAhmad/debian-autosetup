@@ -15,7 +15,11 @@ To run the shell script, use yhe following commad after you _cd_ into the debian
 ```console
 sh debian-autosetup.sh
 ```
-__Note: Some people experience problems running Xorg directly afterwards so it is recommended to give the system a restart.__
+__Note: Some people experience problems running Xorg directly afterwards so it is recommended to give the system a restart.__ So,
+```console
+reboot
+```
+to reboot your system
 
 ## Running dwm
 Firstly, exit out of super user. Now, run the following command to start Xorg
